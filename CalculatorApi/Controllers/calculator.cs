@@ -15,5 +15,34 @@ namespace MyWebAPI.Controllers
             return Ok(a + b);
         }
 
+        [HttpGet("subtract")]
+
+        public IActionResult Subtract(decimal a, decimal b)
+        {
+            return Ok(a - b);
+        }
+
+         [HttpGet("multiply")]
+
+        public IActionResult Multiply(decimal a, decimal b)
+        {
+            return Ok(a * b);
+        }
+
+
+        [HttpGet("divide")]
+
+        public IActionResult Divide(decimal a, decimal b)
+        {
+            return Ok(a / b);
+        }
+
+         [HttpGet("modulo")]
+
+        public IActionResult Modulo(decimal a, decimal b)
+        {
+            return Ok(a % b);
+        }
+
     }
 }
