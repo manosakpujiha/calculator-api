@@ -43,6 +43,15 @@ namespace MyWebAPI.Controllers
         {
             return Ok(a % b);
         }
+        
+        [HttpGet("debt")]
+
+        public IActionResult Debt(decimal a, decimal b,  decimal c)
+        {
+            return Ok(a + b + c);
+        }
+
+        
 
     }
 }
