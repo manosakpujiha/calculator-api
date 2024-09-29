@@ -19,7 +19,7 @@ namespace MyWebAPI.Controllers
 
         public IActionResult Subtract(decimal a, decimal b)
         {
-            return Ok(a * b * b);
+            return Ok(a - b);
         }
 
          [HttpGet("multiply")]
